@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>雷科私車公用油資請款試算</title>
+<style>
+    body {
+     font-size: 100%;
+     font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+     color: #4e5359;
+     background-color: #f3f3f5;
+    }
+
+      .oil {
+        width: 380px;
+        margin: 0px auto;
+        border: 1px solid #000;
+        
+        font-size: 1.2em;
+        background: rgb(247,251,252); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(247,251,252,1) 0%, rgba(217,237,242,1) 40%, rgba(173,217,228,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(247,251,252,1) 0%,rgba(217,237,242,1) 40%,rgba(173,217,228,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbfc', endColorstr='#add9e4',GradientType=0 ); /* IE6-9 */
+      }
+
+      .oil h2 {
+          width:100%;
+          height: 30px;
+          text-align: center;
+          
+      }
+      .oil div {
+          margin: 10px 0;
+          padding: 10px;
+      }
+      .oil input {
+          width:69%;
+          height: 30px;
+          font-size: 1.2em;
+      }
+      .oil span {
+          
+          height: 30px;
+          font-size: 1.2em;
+      }
+
+      #span1 {
+          color:#00b437;
+      }
+
+      #span2 {
+          color:#f00;
+      }
+
+      .button button {
+          width: 360px;
+          height: 50px;
+          font-size: 1em;
+          margin: 0 auto 10px auto;
+          color:#fff;
+          background: rgb(248,80,50); /* Old browsers */
+          background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+      }
+
+      .request {
+          font-weight: 900;
+      }
+
+</style>
+<script language="JavaScript">
+   function oil(){ 
+   number1 = parseInt(document.getElementById("number1").value); 
+   number2 = parseInt(document.getElementById("number2").value);
+   number3 = parseFloat(document.getElementById("number3").value);
+   var resultA = number2 - number1; 
+   document.getElementById("span1").innerHTML=resultA;
+   settA =  resultA * 4 ;
+   settB =  resultA / 8 ;
+   settC =  settB * number3 ; 
+   var resultB =  settA + settC;
+   document.getElementById("span2").innerHTML=resultB;
+   }
+</script>
+  </head>
+  <body>
+   <div class="oil">
+    <h2>雷科私車公用油資請款試算</h2>
+     <div>里程( 起 )：<input type="text" id="number1" name="number1" value="0"></div>
+     <div>里程( 訖 )：<input type="text" id="number2" name="number2" value="0"></div>
+     <div>使用里程： <span id="span1"></span></div>
+     <div>現時油價：<input type="text" id="number3" name="number3" value="0"></div>
+     <div class="request">請款金額： $ <span id="span2"></span></div>
+     <div class="button"><button onclick="oil()">確認計算</button></div>
+  </div>
+   
+
+  </body>
+</html>

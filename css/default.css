@@ -1,0 +1,560 @@
+9body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體","Microsoft YaHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif,STHeiti,SimSun;
+    /*color: #47a3da;*/
+
+}
+
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
+
+.main,
+.container > header {
+	width: 100%;
+	height:139px;
+	margin: 0 auto 15px auto;
+	background-image:url(../images/container_mg.jpg);
+}
+
+.logo {
+	width:40%;
+	float:left;
+	margin:40px 30px 0 5px;
+
+	}
+
+.logo img {
+	width:100%;
+	
+}
+
+.favorites {
+	width:56%;
+	float:right;
+	margin:10px 0 0 0;
+	}
+
+.favorites_top {
+	width: 100%;
+	float:right;	
+}
+
+.favorites_top a {
+	font-size: 1em;
+	margin: 0 0 0 8px;
+	
+}
+
+.favorites_top a:link {
+	color: #f00;
+	
+}
+
+.favorites_top a:visited {
+	color: #f00;
+	
+}
+.favorites_top a:hover {
+	color: #999999;	
+}
+
+.favorites_top_01 {
+	width: 18%;
+	float: right;
+	margin: 8px 0 0 0;
+}
+
+
+.favorites_bottom {
+	width: 75%;
+	margin: 0 0 0 0;
+	float: right;
+	
+}
+
+
+
+
+.container > header nav {
+	float: right;
+}
+
+.container > header nav a {
+	display: block;
+	float: left;
+	position: relative;
+	width: 2.5em;
+	height: 2.5em;
+	background: #fff;
+	border-radius: 50%;
+	color: transparent;
+	margin: 0 0.1em;
+	border: 4px solid #47a3da;
+	text-indent: -8000px;
+}
+
+.container > header nav a:after {
+	content: attr(data-info);
+	color: #47a3da;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover:after {
+	opacity: 1;
+}
+
+.container > header nav a:hover {
+	background: #47a3da;
+}
+
+.icon-drop:before, 
+.icon-arrow-left:before {
+	font-family: 'fontawesome';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+	text-indent: 8000px;
+	padding-left: 8px;
+}
+
+.container > header nav a:hover:before {
+	color: #fff;
+}
+
+.icon-drop:before {
+	content: "\e000";
+}
+
+.icon-arrow-left:before {
+	content: "\f060";
+}
+
+.main,
+.container > footer {
+	width:100%;
+	height:32px;
+	background-color:#830000;
+	float:left;
+	margin:80px 0 0 0;
+	bottom:-5px;
+	position:fixed;
+}
+
+.container > footer > img {
+	z-index:1;
+	position:relative;
+}
+
+.container > footer > p {
+	width:100%;
+	z-index:999;
+	color:#FFF;
+	position: absolute;
+	text-align:right;
+	margin:5px 0 0 0;
+	right:50px;
+}
+
+.download {
+	width: 100%;
+	text-align: center;
+	
+	color: #f00;
+	font-size: 13px;
+	
+}
+
+.gray {
+	width: 100%;
+	background-color: #f1f1f1;
+	font-size: 14px;
+}
+
+.gray th {
+	text-align:center;
+	padding: 0 10px;
+	
+}
+
+.gray td {
+	text-align:left;
+	padding: 6px 0;
+	
+}
+
+.gray_blue {
+	width: 100%;
+	background-color: #dcecff;
+	font-size: 14px;
+}
+
+
+.gray_blue th {
+	text-align:center;
+	padding: 0 10px;
+	
+}
+
+.gray_blue td {
+	text-align:left;
+	padding: 6px 0;
+	
+}
+
+.img_location {
+	margin: 0 -2px 0 0;
+}
+
+/*---------雷科公告-----------*/
+.htmleaf-container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+.title_htmleaf {
+  height: 55px;
+  background: #6bb170;
+  color: white;
+  font-size: 2.2em;
+  text-align: center;
+  padding-top: 13px;
+	
+}
+
+.title_htmleaf select {
+	width: 150px;
+	padding: 5px;
+	font-size: 0.45em;
+}
+
+.title_select {
+	float:right;
+	margin: 0 15px 0 0;
+
+}
+
+.faq {
+	margin: 0 0 100px 0;
+}
+
+.faq li {
+  padding: 12px;
+}
+.faq li.q {
+	width: 100%;
+  background: #eee;
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+  letter-spacing:1.5px;
+}
+
+.faq li.q samp {
+	width: 120px;
+	float:right;
+}
+
+.faq li.q img {
+	margin: 0 15px 0 0;
+}
+.faq li.a {
+  background: #ffffff;
+  display: none;
+  border-left: 2px solid #eeeeee;
+  border-right: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 1.2em;
+  letter-spacing:1.5px;
+}
+
+
+
+.faq li.a p {
+	width: 100%;
+	margin: 20px 0 0 0;
+	color: #f00;
+	font-weight: 700;
+}
+
+.htmleaf_ul {
+	margin: 0 0 20px 65px;
+}
+
+.htmleaf_ul li {
+	margin: -10px 0 -10px 0;
+	list-style-type:decimal;
+	line-height: 35px;
+}
+
+.htmleaf_ul div {
+	margin: 0 0 10px 0;
+}
+
+.htmleaf_ul_left {
+	margin: 0 0 20px 65px;
+}
+
+.htmleaf_ul_left li {
+	margin: -10px 0 -10px 30px;
+	list-style-type:decimal;
+	line-height: 35px;
+}
+
+.htmleaf_ul_left div {
+	margin: 0 0 10px 0;
+}
+
+.htmleaf_ul_left a:link {
+ color: #0000ff;
+}
+
+.htmleaf_ul_left a:visited {
+	color: #0000ff;
+   }
+
+   .htmleaf_ul_left a:hover {
+	color: #f00;
+   }
+
+
+/*圖片尺寸*/
+.img_pix_90 img {
+	width: 90%;
+	margin: 12px 0;
+}
+
+.htmleaf_ul li a:link {
+	color: #0000ff;
+}
+
+.htmleaf_ul li a:visited {
+	color: #0000ff;
+}
+
+.htmleaf_ul li a:hover {
+	color: #da1f00;
+	font-weight: 700;
+}
+
+
+.htmleaf_ul_table2017 table tr td {
+	border: 1px solid #000;
+	text-align: center;
+	
+}
+
+
+.htmleaf_ul_table2017 table tr th {
+	border: 1px solid #000;
+	background: #00b7ee;
+	text-align: center;
+	
+}
+
+.htmleaf_ul_title {
+	margin: 0 0 15px 45px;
+	color: #009e46;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+
+.notice {
+	margin: 30px 0 0 45px;
+	color: #f00;
+	font-weight: 700;
+}
+
+.htmleaf_ul table tr td {
+	border: 1px solid #999999;
+	padding: 5px;
+	text-align: center;
+}
+
+.htmleaf_ul table tr th {
+	border: 1px solid #999999;
+	padding: 5px;
+	background: #fff799;
+	text-align: center;
+	font-weight: 700;
+}
+
+.htmleaf_ul_left table tr td {
+	border: 1px solid #999999;
+	padding: 5px;
+	
+}
+
+.htmleaf_ul_left table tr th {
+	border: 1px solid #999999;
+	padding: 5px;
+	background: #fff799;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+/*-------2018考核-----*/
+
+.birthday_assessment {
+	position:absolute;
+	top:26%;
+	right:10px;
+	z-index: 999999;
+	text-align: center;
+}
+
+
+
+/*-------當周生日壽星-----*/
+.birthday_all {
+	position:absolute;
+	top:45%;
+	right:10px;
+	z-index: 999999;
+	text-align: center;
+}
+
+.birthday_all h3 {
+	margin:0 0 10px 0;
+	font-size: 0.9em;
+	color: #999;
+}
+
+.birthday_all p {
+	font-size: 0.8em;
+	text-align: center;
+	color: #888;
+	margin:5px 0 0 0;
+	line-height: 14px;
+}
+
+
+
+/*-------共用類別-----*/
+.red12 {
+	font-size: 1em;
+	color: #f00;
+}
+
+.green12 {
+	font-size: 1em;
+	color: #00ad4d;
+}
+
+.blue12 {
+	font-size: 1em;
+	color: #1e00ff;
+}
+
+.black_bold {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+.black12 {
+	font-size: 1em;
+	color: #000;
+}
+
+.background_yellow {
+	background-color: #ffff00;
+}
+
+.background_blue{
+	background-color: #b8e9ff;
+}
+
+/*-------1024--------*/
+@media screen and (max-width: 64em) {  
+	
+.logo {
+		width: 40%;
+		
+		float:left;
+	}
+	.logo img {
+	  width:100%;
+	}
+	.favorites {
+		width: 55%;
+		float:left;
+		
+	}
+	.favorites_top {
+	   width: 100%;
+     }
+	.favorites_top_01 {
+		width: 22%;
+	}
+   .favorites_top_01 a {
+		font-size: 0.75em;
+	}
+	.favorites_bottom {
+		width: 100%;
+	}
+}
+
+/*-------800X600--------*/
+@media screen and (max-width: 50em) {  
+	
+	.logo {
+		width: 40%;
+		
+		float:left;
+	}
+	.logo img {
+	  width:100%;
+	}
+	.favorites {
+		width: 55%;
+		float:left;
+		
+	}
+	.favorites_top {
+	   width: 100%;
+     }
+	.favorites_top_01 {
+		width: 22%;
+	}
+   .favorites_top_01 a {
+		font-size: 0.75em;
+	}
+	.favorites_bottom {
+		width: 100%;
+	}
+	
+}

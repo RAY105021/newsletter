@@ -1,0 +1,8 @@
+[data-jqtipnav]{background:#f07221;padding:.9em;border:1px solid #9d4b17; color: #fff;}
+[data-jqtipnav] ul{list-style-type:none;}
+[data-jqtipnav] ul,[data-jqtipnav] ul li{margin:0 0 0 0;padding:0;display:inline}
+[data-jqtipnav] ul li{font-size:1em;padding:3px 10px}
+[data-jqtipnav] ul li a{text-decoration:none;color:inherit;font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體","Microsoft YaHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif,STHeiti,SimSun;}
+[data-jqtipnav] ul li a:link{color:#fff;}
+[data-jqtipnav] ul li a:visited{color:#fff;}
+[data-jqtipnav] ul li a:hover{color:#f00;text-decoration:underline}

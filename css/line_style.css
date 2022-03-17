@@ -1,0 +1,18 @@
+.helper-button a {
+	background: url("../images/btn24_2017.png") no-repeat scroll -111px 0 transparent;
+	cursor: pointer;
+	display: block;
+	position:fixed;
+	width:110px;
+	height:110px;
+	right:25px;
+	top:40%;
+	z-index:999999999999;
+	/*_position:absolute;
+	_bottom:auto;
+	_top:expression(eval(document.documentElement.scrollTop+112)); */
+}
+.helper-button a:hover {
+	background-position:0 0;
+}
+

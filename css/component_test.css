@@ -1,0 +1,171 @@
+.cbp-rfgrid {
+	margin: 35px 0 0 5px;
+	padding: 0 155px;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+
+.cbp-rfgrid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 22.8%; /* Fallback */
+	margin: 0 6px 5px 6px;
+}
+
+.cbp-rfgrid li a,
+.cbp-rfgrid li a img {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.cbp-rfgrid li a img {
+	max-width: 100%;
+}
+
+/* Flexbox is used for centering the heading */
+.cbp-rfgrid li a div {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 30px;
+	background: rgba(27,27,27,0.8);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.cbp-rfgrid li a:hover div {
+	opacity: 1;
+}
+
+.cbp-rfgrid li a div h3 {
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+
+.cbp-rfgrid th {
+	font-size: 12px;
+	
+}
+
+.handbook {
+	height:22px;
+	padding: 3px;
+	text-align: center;
+	background-color: #eeeeee;
+}
+
+.handbook a:link {
+	color: #f00;
+}
+
+.handbook a:visited {
+	color: #f00;
+}
+
+.handbook a:hover {
+	color: #000;
+}
+
+/*/總長跑馬燈/*/
+div#abgne_marquee {
+	position: relative;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	width: 100%;
+	height: 25px;
+	float: left;
+	margin: 0 0 18px 0;
+	/*text-align: right;*/
+}
+
+/*/總長跑馬燈/*/
+div#abgne_marquee div.btnall {
+	width: 600px;
+	height: 25px;
+	position:absolute;
+	right:15px;
+	
+}
+
+div#abgne_marquee ul, div#abgne_marquee li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+div#abgne_marquee ul {
+	position: absolute;
+	left: 30px;
+	margin: 0 30px 0 0;
+}
+
+div#abgne_marquee li {
+	text-align: left;
+	
+}
+div#abgne_marquee ul li a {
+	display: block;
+	overflow: hidden;	/* 超出範圍的部份要隱藏 */
+	font-size:14px;
+	height: 25px;
+	line-height: 25px;
+	text-decoration: none;
+	color: #f00;
+	letter-spacing: 0.5px;
+}
+
+div#abgne_marquee samp {
+	background-color: #178d00;
+	color: #fff;
+	padding: 5px 5px 7px 5px;
+	margin: 0 10px 0 0;
+}
+
+
+
+div#abgne_marquee div.marquee_btn {
+		position: absolute;
+		cursor: pointer;
+}
+div#abgne_marquee div#marquee_next_btn {
+	left: 0;
+	
+}
+div#abgne_marquee div#marquee_prev_btn {
+	right: 0px;
+}
+
+
+@media screen and (max-width: 50em) {  
+	.cbp-rfgrid {
+	margin: 35px 0 0 5px;
+	padding: 0 60px;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+
+.cbp-rfgrid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 22.5%; /* Fallback */
+	margin: 0 6px 5px 6px;
+}
+}
